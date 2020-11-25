@@ -1,0 +1,121 @@
+{
+	// Place your snippets for latte here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"comment HTML": {
+		"prefix": "comm",
+		"body": ["{* $1 *}"],
+		"description": "Comment HTML line"
+    },
+    "Block": {
+		"prefix": "block",
+		"body": ["{block ${1:name}}\n\t$2\n{/block}"]
+  	},
+    "Snippet": {
+		"prefix": "snippet",
+		"body": ["{snippet ${1:name}}\n\t$2\n{/snippet}"]
+  	},
+    "Include": {
+		"prefix": "include",
+		"body": ["{include '${1:../.latte}'}"]
+  	},
+    "Capture": {
+		"prefix": "capture",
+		"body": ["{capture $${1:name}}{/capture}"]
+  	},
+    "Control": {
+		"prefix": "control",
+		"body": ["{control ${1:name}}"]
+  	},
+    "ContinueIf": {
+		"prefix": "conif",
+		"body": ["{continueIf ${1:name}}"]
+  	},
+    "Define": {
+		"prefix": "define",
+		"body": ["{define #${1:name}}\n$0\n{/define}"]
+  	},
+    "Default": {
+		"prefix": "default",
+		"body": ["{default ${1:name} = }"]
+  	},
+    "Foreach": {
+		"prefix": "foreach",
+		"body": ["{foreach $${1:item} as $${2:sequence}}\n$0\n{/foreach}"],
+    "description": "Lupkuj"
+  	},
+    "If": {
+		"prefix": "if",
+		"body": ["{if $${1:name}}\n$0\n{/if}"]
+  	},
+    "IfIsset": {
+		"prefix": "ifis",
+		"body": ["{if isset($${1:name})}\n$0\n{/if}"]
+  	},
+    "IfIssetElse": {
+		"prefix": "ifisel",
+		"body": ["{if isset ($${1:name})}\n$0\n{else}\n$0\n{/if}"]
+  	},
+    "IfElse": {
+		"prefix": "ifel",
+		"body": ["{if $${1:name}}\n$0\n{else}\n$0\n{/if}"]
+  	},
+    "ElseIf": {
+		"prefix": "elif",
+		"body": ["{if $${1:name}}\n$0\n{elseif $${2:var}\n$0\n{else}{/if}"]
+  	},
+    "Cache": {
+		"prefix": "cache",
+		"body": ["{cache $${1:name}}\n$0\n{/cache}"]
+  	},
+    "Php": {
+		"prefix": "php",
+		"body": ["{php $${1:name} = }"]
+  	},
+    "Var": {
+		"prefix": "var",
+		"body": ["{var $${1:name} = }"]
+  	},
+    "Icon": {
+		"prefix": "icon",
+		"body": ["{('${1:name}')|icon}"]
+  	},
+    "PriceFormat": {
+		"prefix": "price",
+		"body": ["{$${1:name}|priceFormat}"]
+  	},
+    "NoEscape": {
+		"prefix": "noesc",
+		"body": ["{$${1:name}|noescape}"]
+  	},
+    "SuperDump": {
+		"prefix": "sd",
+		"body": ["{sd $${1:name}}"]
+  	},
+	"CustomField": {
+	"prefix": "cf",
+	"body": ["{$$customFields->}"]
+	},
+	"CustomFieldsDefault": {
+		"prefix": "cfd",
+		"body": [
+			"{default $${1:name} = isset($$object->cf->${1:name}) ? $$object->cf->${1:name} : NULL}"
+		]
+	},
+	"CustomFieldsIsSet": {
+		"prefix": "cfi",
+		"body": [
+			"{if isset($$i->${1:name})}{$$i->${1:name}}{/if}"
+		]
+	}
+}

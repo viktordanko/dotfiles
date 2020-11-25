@@ -1,0 +1,122 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "cmd+y",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+down",
+    "command": "-editor.action.moveLinesDownAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+s",
+    "command": "workbench.action.files.saveAll"
+  },
+  {
+    "key": "alt+cmd+s",
+    "command": "-workbench.action.files.saveAll"
+  },
+  {
+    "key": "shift+cmd+[IntlBackslash]",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "workbench.action.toggleMultiCursorModifier"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "editor.action.selectToBracket"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "langId": "scss",
+      "name": "brackets"
+    }
+  },
+  {
+    "key": "cmd+k shift+cmd+[BracketLeft]",
+    "command": "-editor.foldAllBlockComments",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k ctrl+alt+cmd+[BracketRight]",
+    "command": "-editor.unfoldRecursively",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k cmd+1",
+    "command": "-editor.foldLevel1",
+    "when": "editorTextFocus"
+  },
+  /**
+        Emmet
+    **/
+  {
+    "key": "cmd+shift+down",
+    "command": "editor.emmet.action.balanceIn"
+  },
+  {
+    "key": "cmd+shift+up",
+    "command": "editor.emmet.action.balanceOut"
+  },
+  {
+    "key": "cmd+shift+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+m cmd+m",
+    "command": "editor.emmet.action.matchTag",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+u",
+    "command": "editor.emmet.action.updateTag",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+'",
+    "command": "workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  }
+]
