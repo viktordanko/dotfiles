@@ -10,9 +10,6 @@ alias php72='/Applications/MAMP/bin/php/php7.2.10/bin/php -c "/Library/Applicati
 #Clear screen
 alias c='clear'
 
-# Switch node version to default
-alias nn='nvm use default'
-
 #Folders
 alias ii='cd ~/INVIA/web'
 alias zz='cd ~/htdocs/zoot-3.0/'
