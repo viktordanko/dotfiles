@@ -39,9 +39,6 @@ alias localip="ifconfig $LOCAL_NET_IFACE | grep 'inet addr' | cut -d ':' -f 2 | 
 # Reload the shell (i.e. invoke as a login shell)
 alias rr='exec {$SHELL} -l'
 
-# Lock the screen (when going AFK)
-alias afk='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
-
 # Flush Directory Service cache
 alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 
