@@ -19,6 +19,7 @@ brew install z
 brew install gh
 brew install npm
 brew install yarn
+brew install composer
 brew install volta
 brew install git
 brew install fzf
