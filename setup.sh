@@ -22,18 +22,20 @@ brew install yarn
 brew install volta
 brew install git
 brew install fzf
+brew install starship
 
 # Software
-brew install --cask visual-studio-code
+brew install --cask alfred
+brew install --cask discord
+brew install --cask figma
+brew install --cask forklift
 brew install --cask iterm2
 brew install --cask notion
-brew install --cask forklift
-brew install --cask alfred
-brew install --cask figma
-brew install --cask discord
-brew install --cask vlc
 brew install --cask spotify
+brew install --cask slack
 brew install --cask steam
+brew install --cask visual-studio-code
+brew install --cask vlc
 
 # Setup settings
 git clone https://github.com/viktordanko/dotfiles ~/Projects/_dotfiles
