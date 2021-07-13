@@ -10,8 +10,8 @@ mkdir ~/Projects
 
 # Fish
 brew install fish
-sudo echo /usr/local/bin/fish >> /etc/shells
-chsh -s /usr/local/bin/fish
+echo /opt/homebrew/opt/fish/bin/fish | sudo tee -a /etc/shells
+chsh -s /opt/homebrew/opt/fish/bin/fish
 
 # Brew utils
 brew install node
