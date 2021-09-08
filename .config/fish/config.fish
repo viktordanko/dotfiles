@@ -2,21 +2,8 @@
 set fish_greeting
 fish_add_path /opt/homebrew/bin
 
-# Switch PHP version to 7.2
-alias php72='/Applications/MAMP/bin/php/php7.2.10/bin/php -c "/Library/Application Support/appsolute/MAMP PRO/conf/php7.2.10.ini"'
-
 # Clear screen
 alias c='clear'
-
-# Switch node version to default
-alias nn='nvm use default'
-
-# Folders
-alias ii='cd ~/INVIA/web'
-alias zz='cd ~/htdocs/zoot-3.0/'
-
-# Create-sk-app
-alias create-sk-app="npx git+ssh://bitbucket.org/superkoders/create-sk-app.git"
 
 # Docker
 alias dc='docker-compose'
@@ -61,8 +48,8 @@ alias gstats='git shortlog -n -s --no-merges'
 alias undo="git reset --soft HEAD~1"
 
 # Show/hide desktop icons
-alias showdesktop 'defaults write com.apple.finder CreateDesktop false; killall Finder'
-alias hidedesktop 'defaults write com.apple.finder CreateDesktop true; killall Finder'
+alias showdesktop 'defaults write com.apple.finder CreateDesktop -bool true && killall Finder'
+alias hidedesktop 'defaults write com.apple.finder CreateDesktop -bool false && killall Finder'
 
 # # Volta stuff
 # set -gx VOLTA_HOME "$HOME/.volta"
