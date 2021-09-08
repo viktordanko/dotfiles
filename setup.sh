@@ -30,6 +30,7 @@ brew install wifi-password
 # Software
 brew install --cask 1password
 brew install --cask alfred
+brew install --cask androidtool
 brew install --cask brave-browser
 brew install --cask discord
 brew install --cask docker
