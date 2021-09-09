@@ -24,7 +24,6 @@ brew install yarn
 brew install composer
 brew install volta
 brew install git
-brew install gh
 brew install ghi
 brew install starship
 brew install wifi-password
