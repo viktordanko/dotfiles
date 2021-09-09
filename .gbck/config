@@ -1,0 +1,53 @@
+{
+  "url": "git@github.com:viktordanko/dotfiles.git",
+  "branch": "main",
+  "readme": "README.md",
+  "syncConfig": false,
+  "entities": [
+    {
+      "i": "~/.config/fish",
+      "o": ".config/fish",
+      "options": {
+        "symlinks": false,
+        "include": [
+          "config.fish"
+        ]
+      }
+    },
+    {
+      "i": "~/.config/starship.toml",
+      "o": ".config/starship.toml"
+    },
+    {
+      "i": "~/Library/Application Support/Code/User/snippets",
+      "o": "vscode/snippets",
+      "options": {
+        "symlinks": false,
+        "include": [
+          "html.json",
+          "javascript.json",
+          "javascriptreact.json",
+          "latte.json",
+          "nunjukcs.json",
+          "scss.json"
+        ]
+      }
+    },
+    {
+      "i": "~/Library/Application Support/Code/User/settings.json",
+      "o": "vscode/settings.json"
+    },
+    {
+      "i": "~/Library/Application Support/Code/User/keybindings.json",
+      "o": "vscode/keybindings.json"
+    },
+    {
+      "i": "~/Library/Application Support/Code/User/keybindings.json",
+      "o": "vscode/keybindings.json"
+    },
+    {
+      "i": "~/.config/setup.sh",
+      "o": "setup.sh"
+    }
+  ]
+}
