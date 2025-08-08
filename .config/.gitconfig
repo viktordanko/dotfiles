@@ -1,0 +1,16 @@
+[user]
+	name = Viktor Danko
+	email = vik@panter.ch
+[pull]
+	ff = only
+	rebase = true
+[rebase]
+	autoSquash = true
+[credential]
+	helper = osxkeychain
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[branch]
+	sort = committerdate

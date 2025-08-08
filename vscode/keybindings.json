@@ -1,5 +1,10 @@
-// Place your key bindings in this file to override the defaultsauto[]
+// Place your key bindings in this file to override the defaults
 [
+  {
+    "key": "cmd+y",
+    "command": "-chatEditor.action.acceptHunk",
+    "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress || chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isRequestInProgress"
+  },
   {
     "key": "cmd+y",
     "command": "editor.action.deleteLines",
@@ -11,6 +16,88 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
+    "key": "f1",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "f1",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "cmd+[Comma]",
+    "command": "-workbench.action.openSettings"
+  },
+  {
+    "key": "cmd+[Comma]",
+    "command": "workbench.action.navigateBackInNavigationLocations"
+  },
+  {
+    "key": "cmd+f4",
+    "command": "editor.action.referenceSearch.trigger"
+  },
+  {
+    "key": "cmd+f4",
+    "command": "references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+  },
+  {
+    "key": "shift+alt+f12",
+    "command": "-references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "name": "brackets"
+    }
+  },
+  {
+    "key": "cmd+s",
+    "command": "workbench.action.files.saveAll"
+  },
+  {
+    "key": "cmd+shift+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "-editor.action.previousMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "-workbench.action.terminal.findPrevious",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "-workbench.action.terminal.openDetectedLink",
+    "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "-workbench.view.debug",
+    "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  {
     "key": "shift+cmd+d",
     "command": "editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
@@ -19,134 +106,13 @@
     "key": "shift+alt+down",
     "command": "-editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+cmd+down",
-    "command": "editor.action.moveLinesDownAction",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+cmd+down",
-    "command": "-editor.action.moveLinesDownAction",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+cmd+up",
-    "command": "editor.action.moveLinesUpAction",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+cmd+up",
-    "command": "-editor.action.moveLinesUpAction",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+s",
-    "command": "workbench.action.files.saveAll"
-  },
-  {
-    "key": "alt+cmd+s",
-    "command": "-workbench.action.files.saveAll"
-  },
-  {
-    "key": "shift+cmd+[IntlBackslash]",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "shift+alt+up",
-    "command": "workbench.action.toggleMultiCursorModifier"
-  },
-  {
-    "key": "shift+cmd+r",
-    "command": "editor.action.selectToBracket"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "editor.action.insertSnippet",
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
     "args": {
-      "langId": "scss",
-      "name": "brackets"
-    }
-  },
-  {
-    "key": "cmd+k shift+cmd+[BracketLeft]",
-    "command": "-editor.foldAllBlockComments",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+k ctrl+alt+cmd+[BracketRight]",
-    "command": "-editor.unfoldRecursively",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+k cmd+1",
-    "command": "-editor.foldLevel1",
-    "when": "editorTextFocus"
-  },
-  /**
-        Emmet
-    **/
-  {
-    "key": "cmd+shift+down",
-    "command": "editor.emmet.action.balanceIn"
-  },
-  {
-    "key": "cmd+shift+up",
-    "command": "editor.emmet.action.balanceOut"
-  },
-  {
-    "key": "cmd+shift+w",
-    "command": "editor.emmet.action.wrapWithAbbreviation",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+m cmd+m",
-    "command": "editor.emmet.action.matchTag",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+u",
-    "command": "editor.emmet.action.updateTag",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+cmd+'",
-    "command": "workbench.action.terminal.openNativeConsole",
-    "when": "!terminalFocus"
-  },
-  {
-    "key": "shift+cmd+c",
-    "command": "-workbench.action.terminal.openNativeConsole",
-    "when": "!terminalFocus"
-  },
-  {
-    "key": "cmd+n cmd+n",
-    "command": "workbench.action.files.openFileFolder"
-  },
-  {
-    "key": "cmd+o",
-    "command": "-workbench.action.files.openFileFolder"
-  },
-  /**
-        Autosuggest  (see: https://code.visualstudio.com/docs/editor/intellisense#_key-bindings)
-    **/
-  {
-    "key": "ctrl+space",
-    "command": "toggleSuggestionDetails",
-    "when": "editorTextFocus && suggestWidgetVisible"
-  },
-  {
-    "key": "ctrl+alt+space",
-    "command": "toggleSuggestionFocus",
-    "when": "editorTextFocus && suggestWidgetVisible"
-  },
-  {
-    "key": "f1",
-    "command": "editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "f1",
-    "command": "-workbench.action.showCommands"
-  }
+        "text": "\\\r\n"
+    },
+    "when": "terminalFocus"
+}
 ]

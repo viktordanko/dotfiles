@@ -1,105 +1,17 @@
 {
-  "editor.minimap.enabled": false,
-  "editor.insertSpaces": false,
-  "material-icon-theme.folders.theme": "classic",
-  "material-icon-theme.hidesExplorerArrows": true,
-  "material-icon-theme.folders.color": "#42a5f5",
-  "workbench.iconTheme": "vscode-icons",
-  "breadcrumbs.enabled": true,
-  "emmet.includeLanguages": {
-    "twig": "html",
-    "latte": "html",
-    "javascript": "javascriptreact"
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
   },
-  "editor.wordWrap": "on",
-  "editor.renderWhitespace": "trailing",
-  "editor.renderControlCharacters": true,
-  "files.trimTrailingWhitespace": true,
-  "editor.suggestSelection": "first",
-  "editor.suggest.showSnippets": true,
-  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.tabCompletion": "onlySnippets",
-  "gitlens.keymap": "none",
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": true,
-    "suppressGitMissingWarning": true,
-    "suppressImproperWorkspaceCasingWarning": true,
-    "suppressLineUncommittedWarning": true
-  },
-  "gitlens.hovers.currentLine.over": "line",
-  "sync.gist": "01645042ee99f810e702796884e309fc",
-  "yaml.schemas": {
-    "file:///Users/viktordanko/.vscode/extensions/atlassian.atlascode-1.4.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "terminal.integrated.rendererType": "dom",
-  "terminal.integrated.fontFamily": "FiraCode NF",
-  "editor.fontFamily": "FiraCode NF",
-  "editor.fontLigatures": true,
-  "workbench.fontAliasing": "antialiased",
-
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "[typescriptreact]": {
-    "editor.formatOnSave": true
-  },
-  "[html]": {
-    "editor.formatOnSave": false
-  },
-  "files.watcherExclude": {
-    "\"/.git\": true": true
-  },
-  "files.associations": {
-    "*.md": "mdx",
-    "*.twig": "html"
-  },
-  "editor.bracketPairColorization.enabled": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true,
-    "source.addMissingImports": true
-  },
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
-  "git.autofetch": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-  "search.exclude": {
-    "**/build": true,
-    "**/dist": true
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.accessibilitySupport": "off",
   "editor.fontSize": 14,
-  "liveshare.featureSet": "insiders",
-  "vsicons.dontShowNewVersionMessage": true,
-  "editor.formatOnSave": true,
-  "editor.linkedEditing": true,
-  "workbench.startupEditor": "welcomePage",
+  "extensions.ignoreRecommendations": true,
   "workbench.colorTheme": "SUPERKODERS Theme",
-  "explorer.openEditors.visible": 0,
-  "eslint.run": "onSave",
-  "eslint.validate": ["javascript", "javascriptreact"],
-  "terminal.integrated.fontSize": 12,
-  "security.workspace.trust.untrustedFiles": "open",
-  "saveAndRun": {
-    "commands": [
-      {
-        "match": "schema.prisma",
-        "cmd": "yarn prisma db push",
-        "silent": false
-      }
-    ]
-  },
-  "editor.inlineSuggest.enabled": true,
-  "redhat.telemetry.enabled": false,
-  "window.zoomLevel": -1,
-  "workbench.productIconTheme": "fluent-icons"
+  "vsicons.dontShowNewVersionMessage": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "explorer.confirmPasteNative": false,
+  "totalTypeScript.hiddenTips": ["literal-type"],
+  "editor.minimap.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.lineNumbers": "relative"
 }
